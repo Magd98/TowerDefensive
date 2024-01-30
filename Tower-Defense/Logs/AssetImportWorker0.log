@@ -424,3 +424,181 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4039.666887 seconds.
+  path: Assets/Scripts/EditSnapper.cs
+  artifactKey: Guid(a8517e08d74afe7448a99f1750bb254b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EditSnapper.cs using Guid(a8517e08d74afe7448a99f1750bb254b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a5d83644575c662e21ae050ab9dbda') in 0.013480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.257695 seconds.
+  path: Assets/Prefabs/PieceGrid.prefab
+  artifactKey: Guid(d3ae2fc9122109d479134488c08eb2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PieceGrid.prefab using Guid(d3ae2fc9122109d479134488c08eb2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6e97aadf8f4a828b47f9650cb1ebb9') in 0.008824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.187784 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43ff8aaddb38d2df18b44f7a14ada1e') in 0.123705 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007185 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\TowerDefensive\TowerDefensive\Tower-Defense\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\TowerDefensive\TowerDefensive\Tower-Defense\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.098 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1099ms)
+		BeginReloadAssembly (205ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (767ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Failed to load shader (instanceID 396, GUID 9c442dc870b456e48b615cd8add0e9ef)
+Failed to load shader (instanceID 398, GUID 493b79ea9c9be44ed8b702014d3ac49c)
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (4.9 KB). Loaded Objects now: 518.
+Memory consumption went from 31.0 MB to 31.0 MB.
+Total: 3.376600 ms (FindLiveObjects: 0.063300 ms CreateObjectMapping: 0.004000 ms MarkObjects: 3.295100 ms  DeleteObjects: 0.012900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1525.167048 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e952e7b4e5eafeb2d9eff1b1fa7888') in 0.140173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.664803 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdeea70ebda036424e8faa7c7f0a0678') in 0.002749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.046280 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b68b1b2afef2027f54279c0aadafef3') in 0.002830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.296089 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091c87296ffafa29def06361a8af8cab') in 0.003082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.962150 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(7fcade7c9cee0af4380da1db02bce918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd31e2096daf3986619ed6518af7fa5e') in 0.002996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 142.824183 seconds.
+  path: Assets/Scripts/EditorSnapper.cs
+  artifactKey: Guid(1d7b4ec1fcc022b44a4e31fb8ff1b925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EditorSnapper.cs using Guid(1d7b4ec1fcc022b44a4e31fb8ff1b925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee8f37618e5db24cf7ff1bd50106245') in 0.004417 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007030 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\TowerDefensive\TowerDefensive\Tower-Defense\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\TowerDefensive\TowerDefensive\Tower-Defense\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.063 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1064ms)
+		BeginReloadAssembly (208ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (712ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (253ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (134ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Failed to load shader (instanceID 396, GUID 9c442dc870b456e48b615cd8add0e9ef)
+Failed to load shader (instanceID 398, GUID 493b79ea9c9be44ed8b702014d3ac49c)
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (7.0 KB). Loaded Objects now: 519.
+Memory consumption went from 31.0 MB to 31.0 MB.
+Total: 2.724600 ms (FindLiveObjects: 0.036600 ms CreateObjectMapping: 0.003200 ms MarkObjects: 2.679700 ms  DeleteObjects: 0.004400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18.148953 seconds.
+  path: Assets/Scripts/EditorSnapper.cs
+  artifactKey: Guid(1d7b4ec1fcc022b44a4e31fb8ff1b925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EditorSnapper.cs using Guid(1d7b4ec1fcc022b44a4e31fb8ff1b925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff0d266afba809bc595dbed37394775') in 0.003302 seconds 

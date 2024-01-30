@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
+
 public class EditorSnapper : MonoBehaviour
 {
     [SerializeField][Range(1f, 20f)] float gridSize = 10f;
+
+    
     void Update()
     {
         Vector3 snapPos = transform.position;
