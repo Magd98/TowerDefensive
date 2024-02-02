@@ -27,9 +27,10 @@ public class Waypoint : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetColor(Color color)
     {
-        
+       MeshRenderer topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
+       topMeshRenderer.material.color = color; 
     }
+
 }
