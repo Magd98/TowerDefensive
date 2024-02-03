@@ -6,6 +6,10 @@ using UnityEngine;
 public class PathFinder : MonoBehaviour
 {
     Dictionary<Vector2Int,Waypoint> levelGrid= new Dictionary<Vector2Int,Waypoint>();
+
+    Queue<Waypoint> queueWay =new Queue<Waypoint>();
+    [SerializeField] bool isRunning = true; // todo make private.
+
     [SerializeField] Waypoint startWaypoint;
     [SerializeField] Waypoint endWaypoint;
 
@@ -21,15 +25,68 @@ public class PathFinder : MonoBehaviour
     {
         LoadBlocks();
         HighlightStartandEnd();
-        ExploreNeighbors();
+        Pathfinding();
     }
 
-    void ExploreNeighbors()
+     void Pathfinding()
     {
+        queueWay.Enqueue(startWaypoint);
+        while (queueWay.Count > 0&& isRunning)
+        {
+            Waypoint searchCenter = queueWay.Dequeue();
+            print("Searching From: " + searchCenter);
+            HaltingIfEndFound(searchCenter);
+            ExploreNeighbors(searchCenter);
+            searchCenter.isExplored = true;
+
+        }
+        print("Finished Pathfinding ?");
+    }
+
+     void HaltingIfEndFound(Waypoint searchCenter)
+    {
+        if (searchCenter == endWaypoint)
+        {
+            print("We Found our way there");
+            isRunning = false;
+        }
+
+
+    }
+
+    void ExploreNeighbors(Waypoint from)
+    {
+        if(!isRunning) { return;}
+
         foreach(Vector2Int direction in directions)
         {
-            print(direction);
+            Vector2Int neighborCoordinates = from.GetGridPos() + direction;
+            try
+            {
+                QueuingNewNeighbors(neighborCoordinates);
+            }
+
+            catch
+            {
+                //do nothing
+            }
         }
+    }
+
+    void QueuingNewNeighbors(Vector2Int neighborCoordinates)
+    {
+        Waypoint neighbor = levelGrid[neighborCoordinates];
+        if (neighbor.isExplored) 
+        {
+            //do nothing
+        }
+        else
+        {
+            neighbor.SetColor(Color.black);
+            queueWay.Enqueue(neighbor);
+            print("Queuing: " + neighbor);
+        }
+       
     }
 
     void LoadBlocks()
