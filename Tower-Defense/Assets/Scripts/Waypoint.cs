@@ -9,17 +9,14 @@ public class Waypoint : MonoBehaviour
     Vector2Int gridPos;
 
     public bool isExplored=false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Waypoint exploredFrom;
 
     public int GetGridSize()
     {
         return gridSize;
     }
-
+     
+    
     public Vector2Int GetGridPos()
     {
         return new Vector2Int(

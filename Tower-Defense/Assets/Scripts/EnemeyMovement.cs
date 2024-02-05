@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class EnemeyMovement : MonoBehaviour
 {
-    [SerializeField] List<Waypoint> path;
-    // Start is called before the first frame update
+
+    PathFinder pathfinder;
+    
     void Start()
     {
-        
+        pathfinder = FindObjectOfType<PathFinder>();
+        var path = pathfinder.GetPath();
+        StartCoroutine(FollowPath(path));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
-    IEnumerator FollowPath()
+    IEnumerator FollowPath(List<Waypoint>path)
     {
         print("Start Patrolling .....");
         foreach (Waypoint point in path)

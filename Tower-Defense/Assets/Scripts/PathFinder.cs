@@ -10,6 +10,10 @@ public class PathFinder : MonoBehaviour
     Queue<Waypoint> queueWay =new Queue<Waypoint>();
     [SerializeField] bool isRunning = true; // todo make private.
 
+    List<Waypoint> path= new List<Waypoint>();
+
+    Waypoint searchCenter;
+
     [SerializeField] Waypoint startWaypoint;
     [SerializeField] Waypoint endWaypoint;
 
@@ -21,70 +25,92 @@ public class PathFinder : MonoBehaviour
         Vector2Int.right,
     };
 
-       void Start()
+    
+    public List<Waypoint> GetPath()
     {
         LoadBlocks();
         HighlightStartandEnd();
-        Pathfinding();
+        BreadthFirstSearch();
+        CreatePath();
+
+        return path;
+    }
+   void Start()
+    {
+        
     }
 
-     void Pathfinding()
+     void CreatePath()
+    {
+        path.Add(endWaypoint);
+        Waypoint previous = endWaypoint.exploredFrom;
+        while (previous != startWaypoint) 
+        {
+            path.Add(previous);
+            previous = previous.exploredFrom;
+        }
+        path.Add(startWaypoint);
+        path.Reverse();
+    }
+
+    void BreadthFirstSearch()
     {
         queueWay.Enqueue(startWaypoint);
         while (queueWay.Count > 0&& isRunning)
         {
-            Waypoint searchCenter = queueWay.Dequeue();
-            print("Searching From: " + searchCenter);
-            HaltingIfEndFound(searchCenter);
-            ExploreNeighbors(searchCenter);
+            searchCenter = queueWay.Dequeue();
+            HaltingIfEndFound();
+            ExploreNeighbors();
             searchCenter.isExplored = true;
 
         }
         print("Finished Pathfinding ?");
     }
 
-     void HaltingIfEndFound(Waypoint searchCenter)
+     void HaltingIfEndFound()
     {
         if (searchCenter == endWaypoint)
         {
-            print("We Found our way there");
+            
             isRunning = false;
         }
 
 
     }
 
-    void ExploreNeighbors(Waypoint from)
+    void ExploreNeighbors()
     {
         if(!isRunning) { return;}
 
         foreach(Vector2Int direction in directions)
         {
-            Vector2Int neighborCoordinates = from.GetGridPos() + direction;
-            try
+            Vector2Int neighborCoordinates = searchCenter.GetGridPos() + direction;
+            try 
             {
+                
                 QueuingNewNeighbors(neighborCoordinates);
-            }
 
+                }
             catch
             {
-                //do nothing
+
             }
+
         }
     }
 
     void QueuingNewNeighbors(Vector2Int neighborCoordinates)
     {
         Waypoint neighbor = levelGrid[neighborCoordinates];
-        if (neighbor.isExplored) 
+        if (neighbor.isExplored || queueWay.Contains(neighbor)) 
         {
             //do nothing
         }
         else
         {
-            neighbor.SetColor(Color.black);
             queueWay.Enqueue(neighbor);
-            print("Queuing: " + neighbor);
+            neighbor.exploredFrom = searchCenter;
+            
         }
        
     }
@@ -104,7 +130,7 @@ public class PathFinder : MonoBehaviour
                 levelGrid.Add(waypoint.GetGridPos(), waypoint);
             }
         }
-        print(levelGrid.Count) ;
+      
     }
 
     void HighlightStartandEnd() 
