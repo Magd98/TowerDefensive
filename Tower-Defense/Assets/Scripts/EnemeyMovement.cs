@@ -22,8 +22,7 @@ public class EnemeyMovement : MonoBehaviour
         foreach (Waypoint point in path)
         {
             transform.position=point.transform.position;
-            print("Visiting: " + point.name);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
         }
         print("End Patrolling");
 
