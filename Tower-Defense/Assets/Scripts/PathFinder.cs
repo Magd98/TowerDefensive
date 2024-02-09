@@ -38,7 +38,6 @@ public class PathFinder : MonoBehaviour
     private void CalculatePath()
     {
         LoadBlocks();
-        HighlightStartandEnd();
         BreadthFirstSearch();
         CreatePath();
     }
@@ -137,17 +136,5 @@ public class PathFinder : MonoBehaviour
       
     }
 
-    void HighlightStartandEnd() 
-    {
-            startWaypoint.SetColor(Color.green);
-            endWaypoint.SetColor(Color.red);
-     
-    
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
