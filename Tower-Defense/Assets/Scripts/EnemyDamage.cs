@@ -6,6 +6,8 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] int hitPoints = 10;
+    [SerializeField] ParticleSystem hitParticlePrefab;
+    [SerializeField] ParticleSystem deathParticlePrefab;
     void Start()
     {
         
@@ -18,6 +20,7 @@ public class EnemyDamage : MonoBehaviour
         if (hitPoints == 0)
         {
             KillEnemy();
+            
         }
     }
 
@@ -25,10 +28,14 @@ public class EnemyDamage : MonoBehaviour
     void ProcessHit()
     {
        hitPoints= hitPoints - 1;
+       hitParticlePrefab.Play();
     
     }
      void KillEnemy()
     {
+        var deathVFX=Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
+        deathVFX.Play();
         Destroy(gameObject);
+        
     }
 }

@@ -60,9 +60,9 @@
     <Compile Include="Assets\Scripts\CubeEditor.cs" />
     <Compile Include="Assets\Scripts\EnemeyMovement.cs" />
     <Compile Include="Assets\Scripts\Waypoint.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\PathFinder.cs" />
     <Compile Include="Assets\Scripts\EnemyDamage.cs" />
-    <Compile Include="Assets\EnemySpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
