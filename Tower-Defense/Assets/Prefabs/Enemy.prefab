@@ -64,6 +64,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9370d50c9d0f44e994c4f83eb280a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 0.5
+  goalVfx: {fileID: 198537984209914932, guid: b27384ec4a83c7c49a01fb69d28f7db4, type: 3}
 --- !u!114 &3085382219981078727
 MonoBehaviour:
   m_ObjectHideFlags: 0

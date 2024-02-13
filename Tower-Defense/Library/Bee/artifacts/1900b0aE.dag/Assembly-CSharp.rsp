@@ -345,12 +345,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/BaseHealth.cs"
 "Assets/Scripts/CubeEditor.cs"
 "Assets/Scripts/EnemeyMovement.cs"
 "Assets/Scripts/EnemyDamage.cs"
 "Assets/Scripts/EnemySpawner.cs"
 "Assets/Scripts/PathFinder.cs"
 "Assets/Scripts/Tower.cs"
+"Assets/Scripts/TowerFactory.cs"
 "Assets/Scripts/Waypoint.cs"
 -langversion:9.0
 
